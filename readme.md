@@ -8,7 +8,57 @@ The system was developed and validated on a resource-constrained local environme
 
 The system addresses the challenge of querying unstructured data by converting diverse content formats into a unified vector space, allowing users to retrieve precise contextual information for their queries. This report details the system architecture, data ingestion pipeline, API design, and a quantitative evaluation of retrieval performance under these constraints.
 
+
 ---
+## 2. How to Run (Local Development)
+
+This project can be executed locally using a Python virtual environment.  
+The system was validated on a CPU-only, resource-constrained machine (4 GB RAM).
+
+###  Prerequisites
+- Python 3.10+
+- pip
+- Git
+
+###  Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/<repo-name>.git
+   cd <repo-name>
+
+2. Create and activate a virtual environment
+```
+python -m venv venv
+```
+
+Windows
+```
+venv\Scripts\activate
+
+```
+Linux / macOS
+```
+source venv/bin/activate
+```
+
+3. Install dependencies
+```
+pip install -r requirements.txt
+```
+
+4. Start the API server
+```
+uvicorn app.main:app --reload
+```
+
+5. Access the API
+
+API Health Check: ```http://127.0.0.1:8000/```
+
+Interactive API Docs (Swagger UI):``` http://127.0.0.1:8000/docs```
+
+
 
 ## 2. System Overview (Task 1)
 
