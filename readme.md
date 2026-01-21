@@ -24,8 +24,8 @@ The system was validated on a CPU-only, resource-constrained machine (4 GB RAM).
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/CodedByAravind/Agentic-Rag-System.git
+   cd Agentic-Rag-System
 
 2. Create and activate a virtual environment
 ```
